@@ -6,7 +6,7 @@
 
 const numero = -4;
 
-const risutlato = numero >= 0 ? "positivo": "negativo";
+const risutlato = numero >= 0 ? "positivo" : "negativo";
 
 console.log('il risutlato è ', risutlato);
 
@@ -17,8 +17,8 @@ console.log('il risutlato è ', risutlato);
  * l'operatore ternario 
  */
 
-const input = 4 ; 
-const verifica = input%2== 0 ? 'pari': 'dispari';
+const input = 4;
+const verifica = input % 2 == 0 ? 'pari' : 'dispari';
 
 console.log(`Il numero è ${verifica}`);
 
@@ -29,7 +29,7 @@ console.log(`Il numero è ${verifica}`);
  * utilizzando l'operatore ternario 
  */
 
-const stringa  = 'giorgio';
+const stringa = 'giorgio';
 
 const controllo = stringa.length > 0 ? 'la stringa è piena' : 'la stringa è vuota';
 
@@ -42,12 +42,12 @@ console.log(`La stringa ${stringa} è ${controllo}`);
  */
 
 
-const prezzoIniziale = 100; 
+const prezzoIniziale = 100;
 const sconto = 20;
 
-const prezzoScontato = prezzoIniziale - (prezzoIniziale*sconto/100);
+const prezzoScontato = prezzoIniziale - (prezzoIniziale * sconto / 100);
 
-console.log('il prezzo scontato è: ',prezzoScontato);
+console.log('il prezzo scontato è: ', prezzoScontato);
 
 
 /**
@@ -57,14 +57,14 @@ console.log('il prezzo scontato è: ',prezzoScontato);
  * 
  */
 
-const valoreEntrata = 14 ; 
+const valoreEntrata = 14;
 
 const verificavalore =
-    valoreEntrata > 0 
-    ? "maggiore di zero"
-    :valoreEntrata < 0 
-    ?'minore di zero'
-    :'uguale a zero ';
+    valoreEntrata > 0
+        ? "maggiore di zero"
+        : valoreEntrata < 0
+            ? 'minore di zero'
+            : 'uguale a zero ';
 
 console.log('Il numero è ', verificavalore);
 
@@ -75,12 +75,12 @@ console.log('Il numero è ', verificavalore);
  */
 
 
-const dividendo= 10; 
-const  divisore = 2 ; 
+const dividendo = 10;
+const divisore = 2;
 
-const quoziente = dividendo % divisore == 0 ? 'è divisibile': 'non è divisibile';
+const quoziente = dividendo % divisore == 0 ? 'è divisibile' : 'non è divisibile';
 
-console.log('risultato  divisizione',quoziente);
+console.log('risultato  divisizione', quoziente);
 
 
 /**
@@ -89,25 +89,25 @@ console.log('risultato  divisizione',quoziente);
  sia definito o infefinito utilizzando l'operatore ternario 
  */
 
- let variabile ; 
- const constrolloDato = typeof variabile !== 'undefined' ? 'definita':'undefined';
+let variabile;
+const constrolloDato = typeof variabile !== 'undefined' ? 'definita' : 'undefined';
 
- console.log('la variabile è ',constrolloDato);
+console.log('la variabile è ', constrolloDato);
 
- /**
-  * Esercizio 8 
-  * Scrivi un codice che prenda un numero e un intervallo come input
-  * e verifichi se il numero è compreso nell'intervallo utilizzando l'operatore ternario 
-  */
+/**
+ * Esercizio 8 
+ * Scrivi un codice che prenda un numero e un intervallo come input
+ * e verifichi se il numero è compreso nell'intervallo utilizzando l'operatore ternario 
+ */
 
- const utente = 15 ; 
- const intervalloMinimo = 10; 
- const intervalloMassimo = 20;
+const utente = 15;
+const intervalloMinimo = 10;
+const intervalloMassimo = 20;
 
- const result = 
+const result =
     utente >= intervalloMinimo && utente <= intervalloMassimo
-    ? 'compreso'
-    :'non compreso';
+        ? 'compreso'
+        : 'non compreso';
 
 console.log('il numero è ', result);
 
@@ -117,3 +117,24 @@ console.log('il numero è ', result);
  * Scrivi un codice che prenda una variabile come input e verifichi 
  * se è di tipo stringa o numerica utilizzando l'operatore ternario 
  */
+
+const tipo = "Hello";
+const risult =
+    typeof tipo === "string"
+        ? "stringa"
+        : typeof tipo === "number"//questi in sostanza son come if else if 
+            ? "numerica"
+            : "altro tipo";
+console.log("La variabile è di tipo:", risult);
+
+/**
+ * Esercizio 10
+ * Scrivi un codice che preanda una variabile booleand come input e verifichi se è vera è falsa
+ * utilizzando l'operatore ternario.
+ */
+
+
+const risposta = false;
+
+const conferma = risposta == false ? 'negativo ' : 'positivo ';
+console.log(conferma);
